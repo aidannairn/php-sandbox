@@ -18,7 +18,38 @@
 /*
 - Variables must be prefixed with $
 - Variables must start with a letter or the underscore character
-- variables can't start with a number
+- Variables can't start with a number
 - Variables can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
 - Variables are case-sensitive ($name and $NAME are two different variables)
 */
+
+$name = 'Aidan'; // String // Can be single or double quotes
+$age = 27; // Integer
+$hasKids = false; // Boolean
+$cashOnHand = 2.5; //Float
+
+var_dump($cashOnHand);
+
+/* --- Adding variables to strings -- */
+
+// Double quotes can be used to add variables to strings
+echo "$name is $age years old";
+
+// Deprecated method
+echo "${name} is ${age} years old";
+
+// Concatenate Strings
+echo '<h3>' . $name . ' is ' . $age . ' years old</h3>';
+
+// Arithmetic Operators
+
+echo 5 + 5;
+echo 10 - 6;
+echo 5 * 10;
+echo 10 / 2;
+
+// Constants - Cannot be changed
+define('HOST', 'localhost');
+define('USER', 'root');
+
+var_dump(HOST);
